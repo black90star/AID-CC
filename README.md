@@ -39,12 +39,13 @@ The following gif example of parallel cooridates plot shows the results of gener
 
   ## Commands for code implimentation
 ### Materials extrapolation to hit multiple extreme targets properties; targets C1 to C10:
+  ```python
   python inference_extrapolation.py data/checkpoints/extrapolation/checkpoint-750-1 --run PPO --env DrugDiscoveryEnv --episodes 1000  
   python inference_extrapolation.py data/checkpoints/extrapolation/checkpoint-750-2 --run PPO --env DrugDiscoveryEnv --episodes 1000  
   python inference_extrapolation.py data/checkpoints/extrapolation/checkpoint-750-3 --run PPO --env DrugDiscoveryEnv --episodes 1000  
   ...  
   python inference_extrapolation.py data/checkpoints/extrapolation/checkpoint-750-10 --run PPO --env DrugDiscoveryEnv --episodes 1000  
- 
+ ```
  
 ### Application to the discovery of protein docking materials; 5-HT<sub>1B</sub> receptor:
   python inference_docking.py data/checkpoints/docking/checkpoint-80 --run PPO --env DrugDiscoveryEnv --episodes 1000
